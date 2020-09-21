@@ -48,3 +48,9 @@ When I visit the flights index page
     When I click on that link
       - [x] I'm returned to the flights index page 
       - [x] And I no longer see that passenger listed under that flight
+
+#### User Story 4, Passengers Index Page
+As a visitor
+When I visit a passengers index page ('/passengers')
+- [x] I see names of all passengers
+  - [x] And next to the passengers name, I see the number of flights that the passenger has
