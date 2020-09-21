@@ -15,10 +15,10 @@
   - [x] Attributes: :number, :date, :time, :departure_city, :arrival_city
   - [x] Flights belong to airlines
     - [x] add airline_id
-  - [] have many passengers
-- [] Set Up passengers
-  - [] Attributes: :name, :age
-  - [] Set up a many to many relationship between flights and passengers
+  - [x] have many passengers
+- [x] Set Up passengers
+  - [x] Attributes: :name, :age
+  - [x] Set up a many to many relationship between flights and passengers
 
 
 ### Stories
