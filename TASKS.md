@@ -32,3 +32,10 @@ When
   - [x] And under each flight number I see
       - [x] the names of all that flights passengers
 - [x] Set up features test
+
+#### User Story 2, Airlines Show Page
+As a visitor
+When I visit an airlines show page ('/airlines/:id')
+- [x] I see a unique list of passengers that have flights from that airline
+
+- [x] Set up features test
