@@ -39,3 +39,12 @@ When I visit an airlines show page ('/airlines/:id')
 - [x] I see a unique list of passengers that have flights from that airline
 
 - [x] Set up features test
+
+#### User Story 3, Remove a Passenger from a Flight
+As a visitor
+When I visit the flights index page
+  - [x] Next to each passengers name
+    - [x] I see a link to remove that passenger from that flight
+    When I click on that link
+      - [x] I'm returned to the flights index page 
+      - [x] And I no longer see that passenger listed under that flight

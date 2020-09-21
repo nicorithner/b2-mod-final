@@ -39,9 +39,28 @@ RSpec.describe 'Flights Index Page', type: :feature do
 
       within("#flight-#{@flight1.id}") do
         expect(page).to have_content(@passenger1.name)
-        expect(page).to have_content(@passenger4.name)
-        expect(page).to have_content(@passenger7.name)
       end
+    end
+
+    describe "Can remove a passenger" do
+      it "There is a remove link" do
+        visit '/flights'
+        within("#flight-#{@flight1.id}") do
+          expect(page).to have_content(@passenger1.name)
+          expect(page).to have_link("Remove")
+        end
+      end
+      it "Clicking 'Remove' removes passenger from flight and redirects to flights index page" do
+        visit '/flights'
+        within("#flight-#{@flight1.id}") do
+          expect(page).to have_content(@passenger1.name)
+          click_link("Remove")
+        end
+        
+        visit '/flights'
+        expect(page).to_not have_content(@passenger1.name)
+      end
+
     end
   end
 end
