@@ -31,7 +31,7 @@ And I no longer see that passenger listed under that flight
 ```
 User Story 4, Passengers Index Page
 As a visitor
-When I visit a passengers index page ('/passengers/:id')
+When I visit a passengers index page ('/passengers')
 I see names of all passengers
 And next to the passengers name, I see the number of flights that the passenger has
 Collapse
