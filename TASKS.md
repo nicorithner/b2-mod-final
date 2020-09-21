@@ -54,3 +54,20 @@ As a visitor
 When I visit a passengers index page ('/passengers')
 - [x] I see names of all passengers
   - [x] And next to the passengers name, I see the number of flights that the passenger has
+
+```
+def unique_passengers
+    passengers.distinct
+  end
+
+  Passenger List:
+<ul>
+  <% @airline.unique_passengers.each do |passenger| %>
+  <li><%= passenger.name %></li>
+  <% end %>
+</ul>
+
+expect(page).to have_content(@austin.name).once
+      expect(page).to have_content(@greg.name).once
+      expect(page).to have_content(@michael.name).once
+```
