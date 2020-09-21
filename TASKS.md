@@ -27,8 +27,8 @@
 
 As a visitor
 When 
-- [] I visit the flights index page ('/flights')
-  - [] I see a list of all flight numbers
-  - [] And under each flight number I see
-      - [] the names of all that flights passengers
-
+- [x] I visit the flights index page ('/flights')
+  - [x] I see a list of all flight numbers
+  - [x] And under each flight number I see
+      - [x] the names of all that flights passengers
+- [x] Set up features test
