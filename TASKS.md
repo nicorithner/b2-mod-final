@@ -66,8 +66,3 @@ def unique_passengers
   <li><%= passenger.name %></li>
   <% end %>
 </ul>
-
-expect(page).to have_content(@austin.name).once
-      expect(page).to have_content(@greg.name).once
-      expect(page).to have_content(@michael.name).once
-```
