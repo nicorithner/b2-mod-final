@@ -26,12 +26,12 @@ RSpec.describe 'Airline Show Page', type: :feature do
       FlightPassenger.create(flight_id: @flight1.id, passenger_id: @passenger7.id)
     end
 
-    it "I see a list of all flight numbers" do
+    it "I see a list of the Airline's passengers without duplicate names" do
       visit "/airlines/#{@airline.id}"
 
-      expect(page).to have_content(@passenger1.name)
-      expect(page).to have_content(@passenger2.name)
-      expect(page).to have_content(@passenger3.name)
+      expect(page).to have_content(@passenger1.name).once
+      expect(page).to have_content(@passenger2.name).once
+      expect(page).to have_content(@passenger3.name).once
     end
   end
 end
